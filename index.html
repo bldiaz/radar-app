@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar Inversor</title>
+<meta name="description" content="Tu cartera, tu vigilancia y el radar de oportunidades, traducidos en acciones concretas.">
+<meta name="theme-color" content="#14213D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Radar">
+<meta name="robots" content="noindex, nofollow">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="iconos/icono-180.png">
+<link rel="icon" type="image/png" href="iconos/icono-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-radar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12 18.5 5.5"/><circle cx="16" cy="9" r="1.2" fill="currentColor"/></g></symbol>
+  <symbol id="i-inicio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20h-5v-5.5H9V20H4z"/></g></symbol>
+  <symbol id="i-cartera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7M3 12.5h18"/></g></symbol>
+  <symbol id="i-ojo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+  <symbol id="i-noticias" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4" y="4" width="13" height="16" rx="2"/><path d="M17 8h2.5a.5.5 0 0 1 .5.5V18a2 2 0 0 1-2 2H6M7.5 8h6M7.5 12h6M7.5 16h4"/></g></symbol>
+  <symbol id="i-volver" viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-recargar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"/></g></symbol>
+  <symbol id="i-tema" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 4v16a8 8 0 0 0 0-16Z" fill="currentColor"/></g></symbol>
+  <symbol id="i-salir" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h10"/></g></symbol>
+  <symbol id="i-globo" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></g></symbol>
+  <symbol id="i-cartera-s" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="12" height="9" rx="2"/><path d="M6 5V3.5h4V5"/></g></symbol>
+  <symbol id="i-alerta" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 2.5 14 13H2z" stroke-linejoin="round"/><path d="M8 6.5v3M8 11.3v.1"/></g></symbol>
+  <symbol id="i-ok" viewBox="0 0 16 16"><path d="m3.5 8.5 3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-diana" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><circle cx="8" cy="8" r="2.5"/></g></symbol>
+  <symbol id="i-amplitud" viewBox="0 0 16 16"><path d="M2 13V9M6 13V6M10 13V8M14 13V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-calendario" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 6.5h12M5.5 1.5v3M10.5 1.5v3"/></g></symbol>
+</svg>
+
+<!-- Acceso -->
+<section id="acceso" class="acceso oculto" aria-labelledby="acceso-titulo">
+  <form id="form-acceso" autocomplete="on">
+    <div class="marca-logo">
+      <svg style="color:var(--marca)"><use href="#i-radar"/></svg>
+      <div><h1 id="acceso-titulo">Radar Inversor</h1><p>Tus datos están cifrados. Introduce tu contraseña.</p></div>
+    </div>
+    <input type="text" name="username" value="radar" autocomplete="username" class="oculto" aria-hidden="true" tabindex="-1">
+    <label class="campo"><span>Contraseña</span><input id="clave" type="password" autocomplete="current-password" required></label>
+    <label class="check"><input id="recordar" type="checkbox" checked> Recordar en este dispositivo</label>
+    <button class="boton" type="submit" id="btn-entrar">Abrir mi radar</button>
+    <p class="error" id="error-acceso" role="alert"></p>
+  </form>
+</section>
+
+<!-- App -->
+<div id="app" class="oculto">
+  <header class="cabecera" id="cabecera">
+    <h1 id="titulo-vista">Hoy</h1>
+    <div class="estado-datos" id="estado-datos"></div>
+    <button class="icono-btn" id="btn-recargar" aria-label="Actualizar datos"><svg><use href="#i-recargar"/></svg></button>
+    <button class="icono-btn" id="btn-tema" aria-label="Cambiar tema claro u oscuro"><svg><use href="#i-tema"/></svg></button>
+    <button class="icono-btn" id="btn-salir" aria-label="Cerrar sesión"><svg><use href="#i-salir"/></svg></button>
+  </header>
+  <main id="vista" tabindex="-1"></main>
+  <nav class="pestanas" aria-label="Secciones">
+    <button data-vista="inicio" aria-current="page"><svg><use href="#i-inicio"/></svg>Hoy</button>
+    <button data-vista="cartera"><svg><use href="#i-cartera"/></svg>Cartera</button>
+    <button data-vista="vigilancia"><svg><use href="#i-ojo"/></svg>Vigilancia</button>
+    <button data-vista="radar"><svg><use href="#i-radar"/></svg>Radar</button>
+    <button data-vista="noticias"><svg><use href="#i-noticias"/></svg>Noticias</button>
+  </nav>
+</div>
+
+<!-- Ficha de una acción -->
+<section class="hoja" id="hoja" role="dialog" aria-modal="true" aria-labelledby="hoja-ticker">
+  <div class="hoja-cab">
+    <button class="icono-btn" id="btn-cerrar-hoja" aria-label="Volver"><svg><use href="#i-volver"/></svg></button>
+    <div class="tit"><b id="hoja-ticker"></b><span id="hoja-nombre"></span></div>
+  </div>
+  <div class="hoja-cuerpo" id="hoja-cuerpo"></div>
+</section>
+
+<script src="vendor/lightweight-charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
